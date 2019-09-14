@@ -1,3 +1,7 @@
+<?php
+require_once "document_root.php"
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,8 +37,8 @@
 		<div class="main-header" data-background-color="purple">
 			<!-- Logo Header -->
 			<div class="logo-header">
-				
-				<a href="index.html" class="logo">
+
+				<a href="index.php" class="logo">
 					<img src="assets/img/logoazzara.svg" alt="navbar brand" class="navbar-brand">
 				</a>
 				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,7 +57,7 @@
 
 			<!-- Navbar Header -->
 			<nav class="navbar navbar-header navbar-expand-lg">
-				
+
 				<div class="container-fluid">
 					<div class="collapse" id="search-nav">
 						<form class="navbar-left navbar-form nav-search mr-md-3">
@@ -80,7 +84,7 @@
 							<ul class="dropdown-menu messages-notif-box animated fadeIn" aria-labelledby="messageDropdown">
 								<li>
 									<div class="dropdown-title d-flex justify-content-between align-items-center">
-										Messages 									
+										Messages
 										<a href="#" class="small">Mark all as read</a>
 									</div>
 								</li>
@@ -88,7 +92,7 @@
 									<div class="message-notif-scroll scrollbar-outer">
 										<div class="notif-center">
 											<a href="#">
-												<div class="notif-img"> 
+												<div class="notif-img">
 													<img src="assets/img/jm_denis.jpg" alt="Img Profile">
 												</div>
 												<div class="notif-content">
@@ -96,11 +100,11 @@
 													<span class="block">
 														How are you ?
 													</span>
-													<span class="time">5 minutes ago</span> 
+													<span class="time">5 minutes ago</span>
 												</div>
 											</a>
 											<a href="#">
-												<div class="notif-img"> 
+												<div class="notif-img">
 													<img src="assets/img/chadengle.jpg" alt="Img Profile">
 												</div>
 												<div class="notif-content">
@@ -108,11 +112,11 @@
 													<span class="block">
 														Ok, Thanks !
 													</span>
-													<span class="time">12 minutes ago</span> 
+													<span class="time">12 minutes ago</span>
 												</div>
 											</a>
 											<a href="#">
-												<div class="notif-img"> 
+												<div class="notif-img">
 													<img src="assets/img/mlane.jpg" alt="Img Profile">
 												</div>
 												<div class="notif-content">
@@ -120,11 +124,11 @@
 													<span class="block">
 														Ready for the meeting today...
 													</span>
-													<span class="time">12 minutes ago</span> 
+													<span class="time">12 minutes ago</span>
 												</div>
 											</a>
 											<a href="#">
-												<div class="notif-img"> 
+												<div class="notif-img">
 													<img src="assets/img/talha.jpg" alt="Img Profile">
 												</div>
 												<div class="notif-content">
@@ -132,7 +136,7 @@
 													<span class="block">
 														Hi, Apa Kabar ?
 													</span>
-													<span class="time">17 minutes ago</span> 
+													<span class="time">17 minutes ago</span>
 												</div>
 											</a>
 										</div>
@@ -161,7 +165,7 @@
 													<span class="block">
 														New user registered
 													</span>
-													<span class="time">5 minutes ago</span> 
+													<span class="time">5 minutes ago</span>
 												</div>
 											</a>
 											<a href="#">
@@ -170,18 +174,18 @@
 													<span class="block">
 														Rahmad commented on Admin
 													</span>
-													<span class="time">12 minutes ago</span> 
+													<span class="time">12 minutes ago</span>
 												</div>
 											</a>
 											<a href="#">
-												<div class="notif-img"> 
+												<div class="notif-img">
 													<img src="assets/img/profile2.jpg" alt="Img Profile">
 												</div>
 												<div class="notif-content">
 													<span class="block">
 														Reza send messages to you
 													</span>
-													<span class="time">12 minutes ago</span> 
+													<span class="time">12 minutes ago</span>
 												</div>
 											</a>
 											<a href="#">
@@ -190,7 +194,7 @@
 													<span class="block">
 														Farrah liked Admin
 													</span>
-													<span class="time">17 minutes ago</span> 
+													<span class="time">17 minutes ago</span>
 												</div>
 											</a>
 										</div>
@@ -229,7 +233,7 @@
 								</li>
 							</ul>
 						</li>
-						
+
 					</ul>
 				</div>
 			</nav>
@@ -237,394 +241,108 @@
 		</div>
 
 		<!-- Sidebar -->
-		<div class="sidebar">
-			
-			<div class="sidebar-background"></div>
-			<div class="sidebar-wrapper scrollbar-inner">
-				<div class="sidebar-content">
-					<div class="user">
-						<div class="avatar-sm float-left mr-2">
-							<img src="assets/img/profile.jpg" alt="..." class="avatar-img rounded-circle">
-						</div>
-						<div class="info">
-							<a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
-								<span>
-									Hizrian
-									<span class="user-level">Administrator</span>
-									<span class="caret"></span>
-								</span>
-							</a>
-							<div class="clearfix"></div>
-
-							<div class="collapse in" id="collapseExample">
-								<ul class="nav">
-									<li>
-										<a href="#profile">
-											<span class="link-collapse">My Profile</span>
-										</a>
-									</li>
-									<li>
-										<a href="#edit">
-											<span class="link-collapse">Edit Profile</span>
-										</a>
-									</li>
-									<li>
-										<a href="#settings">
-											<span class="link-collapse">Settings</span>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<ul class="nav">
-						<li class="nav-item active">
-							<a href="index.html">
-								<i class="fas fa-home"></i>
-								<p>Dashboard</p>
-								<span class="badge badge-count">5</span>
-							</a>
-						</li>
-						<li class="nav-section">
-							<span class="sidebar-mini-icon">
-								<i class="fa fa-ellipsis-h"></i>
-							</span>
-							<h4 class="text-section">Components</h4>
-						</li>
-						<li class="nav-item">
-							<a data-toggle="collapse" href="#base">
-								<i class="fas fa-layer-group"></i>
-								<p>Base</p>
-								<span class="caret"></span>
-							</a>
-							<div class="collapse" id="base">
-								<ul class="nav nav-collapse">
-									<li>
-										<a href="components/avatars.html">
-											<span class="sub-item">Avatars</span>
-										</a>
-									</li>
-									<li>
-										<a href="components/buttons.html">
-											<span class="sub-item">Buttons</span>
-										</a>
-									</li>
-									<li>
-										<a href="components/gridsystem.html">
-											<span class="sub-item">Grid System</span>
-										</a>
-									</li>
-									<li>
-										<a href="components/panels.html">
-											<span class="sub-item">Panels</span>
-										</a>
-									</li>
-									<li>
-										<a href="components/notifications.html">
-											<span class="sub-item">Notifications</span>
-										</a>
-									</li>
-									<li>
-										<a href="components/sweetalert.html">
-											<span class="sub-item">Sweet Alert</span>
-										</a>
-									</li>
-									<li>
-										<a href="components/font-awesome-icons.html">
-											<span class="sub-item">Font Awesome Icons</span>
-										</a>
-									</li>
-									<li>
-										<a href="components/flaticons.html">
-											<span class="sub-item">Flaticons</span>
-										</a>
-									</li>
-									<li>
-										<a href="components/typography.html">
-											<span class="sub-item">Typography</span>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</li>
-						<li class="nav-item">
-							<a data-toggle="collapse" href="#forms">
-								<i class="fas fa-pen-square"></i>
-								<p>Forms</p>
-								<span class="caret"></span>
-							</a>
-							<div class="collapse" id="forms">
-								<ul class="nav nav-collapse">
-									<li>
-										<a href="forms/forms.html">
-											<span class="sub-item">Basic Form</span>
-										</a>
-									</li>
-									
-								</ul>
-							</div>
-						</li>
-						<li class="nav-item">
-							<a data-toggle="collapse" href="#tables">
-								<i class="fas fa-table"></i>
-								<p>Tables</p>
-								<span class="caret"></span>
-							</a>
-							<div class="collapse" id="tables">
-								<ul class="nav nav-collapse">
-									<li>
-										<a href="tables/tables.html">
-											<span class="sub-item">Basic Table</span>
-										</a>
-									</li>
-									<li>
-										<a href="tables/datatables.html">
-											<span class="sub-item">Datatables</span>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</li>
-						<li class="nav-item">
-							<a data-toggle="collapse" href="#maps">
-								<i class="fas fa-map-marker-alt"></i>
-								<p>Maps</p>
-								<span class="caret"></span>
-							</a>
-							<div class="collapse" id="maps">
-								<ul class="nav nav-collapse">
-									<li>
-										<a href="maps/googlemaps.html">
-											<span class="sub-item">Google Maps</span>
-										</a>
-									</li>
-									<li>
-										<a href="maps/fullscreenmaps.html">
-											<span class="sub-item">Full Screen Maps</span>
-										</a>
-									</li>
-									<li>
-										<a href="maps/jqvmap.html">
-											<span class="sub-item">JQVMap</span>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</li>
-						<li class="nav-item">
-							<a data-toggle="collapse" href="#charts">
-								<i class="far fa-chart-bar"></i>
-								<p>Charts</p>
-								<span class="caret"></span>
-							</a>
-							<div class="collapse" id="charts">
-								<ul class="nav nav-collapse">
-									<li>
-										<a href="charts/charts.html">
-											<span class="sub-item">Chart Js</span>
-										</a>
-									</li>
-									<li>
-										<a href="charts/sparkline.html">
-											<span class="sub-item">Sparkline</span>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</li>
-						
-						<li class="nav-item">
-							<a href="widgets.html">
-								<i class="fas fa-desktop"></i>
-								<p>Widgets</p>
-								<span class="badge badge-count badge-success">4</span>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a data-toggle="collapse" href="#custompages">
-								<i class="fas fa-paint-roller"></i>
-								<p>Custom Pages</p>
-								<span class="caret"></span>
-							</a>
-							<div class="collapse" id="custompages">
-								<ul class="nav nav-collapse">
-									<li>
-										<a href="login.html">
-											<span class="sub-item">Login & Register 1</span>
-										</a>
-									</li>
-									<li>
-										<a href="login2.html">
-											<span class="sub-item">Login & Register 2</span>
-										</a>
-									</li>
-									<li>
-										<a href="userprofile.html">
-											<span class="sub-item">User Profile</span>
-										</a>
-									</li>
-									<li>
-										<a href="404.html">
-											<span class="sub-item">404</span>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</li>
-						<li class="nav-item">
-							<a data-toggle="collapse" href="#submenu">
-								<i class="fas fa-bars"></i>
-								<p>Menu Levels</p>
-								<span class="caret"></span>
-							</a>
-							<div class="collapse" id="submenu">
-								<ul class="nav nav-collapse">
-									<li>
-										<a data-toggle="collapse" href="#subnav1">
-											<span class="sub-item">Level 1</span>
-											<span class="caret"></span>
-										</a>
-										<div class="collapse" id="subnav1">
-											<ul class="nav nav-collapse subnav">
-												<li>
-													<a href="#">
-														<span class="sub-item">Level 2</span>
-													</a>
-												</li>
-												<li>
-													<a href="#">
-														<span class="sub-item">Level 2</span>
-													</a>
-												</li>
-											</ul>
-										</div>
-									</li>
-									<li>
-										<a data-toggle="collapse" href="#subnav2">
-											<span class="sub-item">Level 1</span>
-											<span class="caret"></span>
-										</a>
-										<div class="collapse" id="subnav2">
-											<ul class="nav nav-collapse subnav">
-												<li>
-													<a href="#">
-														<span class="sub-item">Level 2</span>
-													</a>
-												</li>
-											</ul>
-										</div>
-									</li>
-									<li>
-										<a href="#">
-											<span class="sub-item">Level 1</span>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
+        <?php
+            require_once $_SERVER['DOCUMENT_ROOT']."includes/sidebar.php";
+        ?>
 		<!-- End Sidebar -->
+
+
 
 		<div class="main-panel">
 			<div class="content">
-				<div class="page-inner">
+                <div class="panel-header bg-dark-gradient" style="background: linear-gradient(-45deg,#0a0b11,#1f283e)">
+                    <div class="page-inner py-5">
+                        <div class="d-flex flex-column flex-md-row">
+                            <div>
+                            </div>
+                            <div class="text-white total-marks " style="margin-left: auto">
+                                <h2 class="pull-right"><span class="marks-text"></span></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				<div class="page-inner" style="margin-top: -80px;">
 					<div class="page-header">
-						<h4 class="page-title">Dashboard</h4>
-						<div class="btn-group btn-group-page-header ml-auto">
-							<button type="button" class="btn btn-light btn-round btn-page-header-dropdown dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<i class="fa fa-ellipsis-h"></i>
-							</button>
-							<div class="dropdown-menu">
-								<div class="arrow"></div>
-								<a class="dropdown-item" href="#">Action</a>
-								<a class="dropdown-item" href="#">Another action</a>
-								<a class="dropdown-item" href="#">Something else here</a>
-								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="#">Separated link</a>
-							</div>
-						</div>
+						<h4 class="page-title text-white"></h4>
 					</div>
-					<div class="row">
-						<div class="col-sm-6 col-md-3">
-							<div class="card card-stats card-round">
-								<div class="card-body ">
-									<div class="row align-items-center">
-										<div class="col-icon">
-											<div class="icon-big text-center icon-primary bubble-shadow-small">
-												<i class="fas fa-users"></i>
-											</div>
-										</div>
-										<div class="col col-stats ml-3 ml-sm-0">
-											<div class="numbers">
-												<p class="card-category">Visitors</p>
-												<h4 class="card-title">1,294</h4>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-3">
-							<div class="card card-stats card-round">
-								<div class="card-body">
-									<div class="row align-items-center">
-										<div class="col-icon">
-											<div class="icon-big text-center icon-info bubble-shadow-small">
-												<i class="far fa-newspaper"></i>
-											</div>
-										</div>
-										<div class="col col-stats ml-3 ml-sm-0">
-											<div class="numbers">
-												<p class="card-category">Subscribers</p>
-												<h4 class="card-title">1303</h4>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-3">
-							<div class="card card-stats card-round">
-								<div class="card-body">
-									<div class="row align-items-center">
-										<div class="col-icon">
-											<div class="icon-big text-center icon-success bubble-shadow-small">
-												<i class="far fa-chart-bar"></i>
-											</div>
-										</div>
-										<div class="col col-stats ml-3 ml-sm-0">
-											<div class="numbers">
-												<p class="card-category">Sales</p>
-												<h4 class="card-title">$ 1,345</h4>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-3">
-							<div class="card card-stats card-round">
-								<div class="card-body">
-									<div class="row align-items-center">
-										<div class="col-icon">
-											<div class="icon-big text-center icon-secondary bubble-shadow-small">
-												<i class="far fa-check-circle"></i>
-											</div>
-										</div>
-										<div class="col col-stats ml-3 ml-sm-0">
-											<div class="numbers">
-												<p class="card-category">Order</p>
-												<h4 class="card-title">576</h4>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+                    <div class="row row-card-no-pd">
+                        <div class="col-sm-6 col-md-3">
+                            <div class="card card-stats card-round">
+                                <div class="card-body ">
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <div class="icon-big text-center">
+                                                <i class="flaticon-chart-pie text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col col-stats">
+                                            <div class="numbers">
+                                                <p class="card-category">Number</p>
+                                                <h4 class="card-title">150GB</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="card card-stats card-round">
+                                <div class="card-body ">
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <div class="icon-big text-center">
+                                                <i class="flaticon-coins text-success"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col col-stats">
+                                            <div class="numbers">
+                                                <p class="card-category">Revenue</p>
+                                                <h4 class="card-title">$ 1,345</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="card card-stats card-round">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <div class="icon-big text-center">
+                                                <i class="flaticon-error text-danger"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col col-stats">
+                                            <div class="numbers">
+                                                <p class="card-category">Errors</p>
+                                                <h4 class="card-title">23</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="card card-stats card-round">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <div class="icon-big text-center">
+                                                <i class="flaticon-twitter text-primary"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col col-stats">
+                                            <div class="numbers">
+                                                <p class="card-category">Followers</p>
+                                                <h4 class="card-title">+45K</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 					<div class="row">
 						<div class="col-md-8">
 							<div class="card">
@@ -1075,38 +793,7 @@
 			</div>
 			
 		</div>
-		
-		<!-- Custom template | don't include it in your project! -->
-		<div class="custom-template">
-			<div class="title">Settings</div>
-			<div class="custom-content">
-				<div class="switcher">
-					<div class="switch-block">
-						<h4>Topbar</h4>
-						<div class="btnSwitch">
-							<button type="button" class="changeMainHeaderColor" data-color="blue"></button>
-							<button type="button" class="selected changeMainHeaderColor" data-color="purple"></button>
-							<button type="button" class="changeMainHeaderColor" data-color="light-blue"></button>
-							<button type="button" class="changeMainHeaderColor" data-color="green"></button>
-							<button type="button" class="changeMainHeaderColor" data-color="orange"></button>
-							<button type="button" class="changeMainHeaderColor" data-color="red"></button>
-						</div>
-					</div>
-					<div class="switch-block">
-						<h4>Background</h4>
-						<div class="btnSwitch">
-							<button type="button" class="changeBackgroundColor" data-color="bg2"></button>
-							<button type="button" class="changeBackgroundColor selected" data-color="bg1"></button>
-							<button type="button" class="changeBackgroundColor" data-color="bg3"></button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="custom-toggle">
-				<i class="flaticon-settings"></i>
-			</div>
-		</div>
-		<!-- End Custom template -->
+
 	</div>
 </div>
 <!--   Core JS Files   -->
