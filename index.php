@@ -31,9 +31,6 @@ require_once "document_root.php"
 </head>
 <body>
 	<div class="wrapper">
-		<!--
-			Tip 1: You can change the background color of the main header using: data-background-color="blue | purple | light-blue | green | orange | red"
-		-->
 		<div class="main-header" data-background-color="purple">
 			<!-- Logo Header -->
 			<div class="logo-header">
@@ -242,11 +239,9 @@ require_once "document_root.php"
 
 		<!-- Sidebar -->
         <?php
-            require_once $_SERVER['DOCUMENT_ROOT']."includes/sidebar.php";
+                require_once $_SERVER['DOCUMENT_ROOT']."includes/sidebar.php";
         ?>
 		<!-- End Sidebar -->
-
-
 
 		<div class="main-panel">
 			<div class="content">
@@ -266,7 +261,7 @@ require_once "document_root.php"
 						<h4 class="page-title text-white"></h4>
 					</div>
                     <div class="row row-card-no-pd">
-                        <div class="col-sm-6 col-md-3">
+                        <div class="col-sm-6 col-md-4">
                             <div class="card card-stats card-round">
                                 <div class="card-body ">
                                     <div class="row">
@@ -277,15 +272,15 @@ require_once "document_root.php"
                                         </div>
                                         <div class="col col-stats">
                                             <div class="numbers">
-                                                <p class="card-category">Number</p>
-                                                <h4 class="card-title">150GB</h4>
+                                                <p class="card-category">Number of Students</p>
+                                                <h4 class="card-title">150</h4>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-3">
+                        <div class="col-sm-6 col-md-4">
                             <div class="card card-stats card-round">
                                 <div class="card-body ">
                                     <div class="row">
@@ -296,15 +291,15 @@ require_once "document_root.php"
                                         </div>
                                         <div class="col col-stats">
                                             <div class="numbers">
-                                                <p class="card-category">Revenue</p>
-                                                <h4 class="card-title">$ 1,345</h4>
+                                                <p class="card-category">No of Subjects</p>
+                                                <h4 class="card-title">3</h4>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-3">
+                        <div class="col-sm-6 col-md-4">
                             <div class="card card-stats card-round">
                                 <div class="card-body">
                                     <div class="row">
@@ -315,7 +310,7 @@ require_once "document_root.php"
                                         </div>
                                         <div class="col col-stats">
                                             <div class="numbers">
-                                                <p class="card-category">Errors</p>
+                                                <p class="card-category">No of Defaulters</p>
                                                 <h4 class="card-title">23</h4>
                                             </div>
                                         </div>
@@ -323,25 +318,7 @@ require_once "document_root.php"
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-3">
-                            <div class="card card-stats card-round">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-5">
-                                            <div class="icon-big text-center">
-                                                <i class="flaticon-twitter text-primary"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col col-stats">
-                                            <div class="numbers">
-                                                <p class="card-category">Followers</p>
-                                                <h4 class="card-title">+45K</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
 					<div class="row">
 						<div class="col-md-8">
