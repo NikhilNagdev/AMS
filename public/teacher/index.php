@@ -1,7 +1,7 @@
 <?php
-require_once "../../document_root.php";
-require_once $_SERVER['DOCUMENT_ROOT']."includes/Helper.class.php";
-$helper = new Helper();
+    require_once "../../document_root.php";
+    require_once $_SERVER['DOCUMENT_ROOT']."includes/Helper.class.php";
+    $helper = new Helper();
 ?>
 
 <!DOCTYPE html>
@@ -79,16 +79,16 @@ $helper = new Helper();
                             <?php
                                 if(isset($_GET['src'])){
                                     $title = $_GET['src'];
-                                    echo "<h2 class=\"\"><span class=\"\">".Helper::getPageHeading($title)."</span></h2>";
+                                    echo "<h2 class=\"\"><span class=\"page-title text-white\">".Helper::getPageHeading($title)."</span></h2>";
                                 }else{
-                                    echo "<h2 class=\"\"><span class=\"\">Dashboard</span></h2>";
+                                    echo "<h2 class=\"\"><span class=\"page-title text-white\">Dashboard</span></h2>";
                                 }
                             ?>
                         </div>
                     </div>
                 </div>
             </div>
-
+            <!--MAIN PAGE CONTENT-->
             <?php
                 if(isset($_GET['src'])){
                     $page = $_GET['src'];
@@ -103,13 +103,12 @@ $helper = new Helper();
                     require_once "../../includes/pages/teacher/dashboard.php";
                 }
             ?>
-
+            <!--END OF MAIN PAGE CONTENT-->
         </div>
-
     </div>
+</div>
 
-</div>
-</div>
+
 <!--   Core JS Files   -->
 <?php
     require_once "../../includes/core-scripts.php";
