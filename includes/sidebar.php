@@ -39,7 +39,7 @@
                     <div class="collapse" id="base">
                         <ul class="nav nav-collapse">
                             <li>
-                                <a href="components/avatars.html">
+                                <a href="index.php?src=add-students">
                                     <span class="sub-item">Add Students</span>
                                 </a>
                             </li>
