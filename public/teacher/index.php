@@ -99,6 +99,12 @@
                         case 'add-student':
                             require_once "student/add-students.php";
                             break;
+                        case 'view-attendance':
+                            require_once "attendance/view-all-attendance.php";
+                            break;
+                        case 'view-all-students':
+                            require_once "student/view-all-students.php";
+                            break;
                         default:
                             require_once "../../includes/pages/teacher/dashboard.php";
                     }

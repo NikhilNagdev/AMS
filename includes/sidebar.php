@@ -44,7 +44,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="components/buttons.html">
+                                <a href="index.php?src=view-all-students">
                                     <span class="sub-item">View All Students</span>
                                 </a>
                             </li>
