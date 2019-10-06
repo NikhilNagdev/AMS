@@ -9,7 +9,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form action="index.php?src=view-all-students" method="post">
+                <form action="index.php?src=add-attendance" method="post">
                     <div class="form-group">
                         <label for="date-time">Enter date and time of lecture</label>
                         <input class="datetime form-control" type='text' name="start_dt" required placeholder=""/>
@@ -18,7 +18,7 @@
                         <label for="">Select Class</label>
                         <select name="class_id" id="class-id" class="form-control">
                             <?php
-                            $classes = $classObj->getClassByTeacher(1);
+                            $classes = $classObj->getClassByTeacher($teacherID);
                             echo "<option value=\"0\" selected disabled>Select here</option>";
                             foreach ($classes as $class){
                                 echo "<option value=$class->class_id>$class->classname</option>";
@@ -28,12 +28,12 @@
                     </div>
                     <div class="form-group">
                         <label for="">Select Subject</label>
-                        <select name="class_id" id="class-id" class="form-control">
+                        <select name="subject_id" id="class-id" class="form-control">
                             <?php
-                            $classes = $classObj->getClassByTeacher(1);
+                            $subjects = $subjectObj->getSubjectIdByTeacher($teacherID);
                             echo "<option value=\"0\" selected disabled>Select here</option>";
-                            foreach ($classes as $class){
-                                echo "<option value=$class->class_id>$class->classname</option>";
+                            foreach ($subjects as $subject){
+                                echo "<option value=$subject->subject_id>$subject->subject_name</option>";
                             }
                             ?>
                         </select>

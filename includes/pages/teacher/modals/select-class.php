@@ -12,7 +12,7 @@
                 <form action="index.php?src=view-all-students" method="post">
                     <select name="class_id" id="class-id" class="form-control">
                         <?php
-                            $classes = $classObj->getClassByTeacher(1);
+                            $classes = $classObj->getClassByTeacher($teacherID);
                             echo "<option value=\"0\" selected disabled>Select here</option>";
                             foreach ($classes as $class){
                                 echo "<option value=$class->class_id>$class->classname</option>";

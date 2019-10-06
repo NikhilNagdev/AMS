@@ -3,9 +3,12 @@
     require_once $_SERVER['DOCUMENT_ROOT']."includes/Helper.class.php";
     require_once $_SERVER['DOCUMENT_ROOT']."database/models/Student.class.php";
     require_once $_SERVER['DOCUMENT_ROOT']."database/models/Class.class.php";
+    require_once $_SERVER['DOCUMENT_ROOT']."database/models/Subject.class.php";
+    $teacherID = 1;
+    $helper = new Helper();
     $studentObj = new Student();
     $classObj = new ClassTable();
-    $helper = new Helper();
+    $subjectObj = new Subject();
 ?>
 
 <!DOCTYPE html>
