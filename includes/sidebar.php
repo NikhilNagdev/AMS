@@ -44,7 +44,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="index.php?src=view-all-students">
+                                <a id="view-all-students" href="" onclick="return false;">
                                     <span class="sub-item">View All Students</span>
                                 </a>
                             </li>

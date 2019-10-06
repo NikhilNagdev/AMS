@@ -16,9 +16,8 @@ class Student{
     }
 
     public function getStudentsByClass($class_id){
-        //SELECT student_details.student_id, user.name, batch.batch_id, batch.batch_name, class.class_id, class.class_name FROM `student_details` JOIN batch ON batch.batch_id = student_details.batch_id JOIN class ON class.class_id = batch.class_id JOIN student ON student.student_id = student_details.student_id JOIN user ON student.user_id = user.user_id WHERE class.class_id = 1 GROUP BY student.student_id
-
-        return $this->student_details->select("student_details.student_id", "user.name", "batch.batch_id", "batch.batch_name", "class.class_id", "class.class_name")
+        //SELECT student_details.student_id, user.name, batch.batch_id, batch.batch_name, class.sem_no, class.class_id, class.class_name FROM `student_details` JOIN batch ON batch.batch_id = student_details.batch_id JOIN class ON class.class_id = batch.class_id JOIN student ON student.student_id = student_details.student_id JOIN user ON student.user_id = user.user_id WHERE class.class_id = 1 GROUP BY student.student_id
+        return $this->student_details->select("student_details.student_id", "user.name", "batch.batch_id", "batch.batch_name", "class.class_id", "class.classname", "class.sem_no")
             ->join("batch", "batch.batch_id", "student_details.batch_id")
             ->join("class", "class.class_id", "batch.class_id")
             ->join("student", "student.student_id","student_details.student_id")

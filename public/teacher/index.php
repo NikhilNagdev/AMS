@@ -1,6 +1,10 @@
 <?php
     require_once "../../document_root.php";
     require_once $_SERVER['DOCUMENT_ROOT']."includes/Helper.class.php";
+    require_once $_SERVER['DOCUMENT_ROOT']."database/models/Student.class.php";
+    require_once $_SERVER['DOCUMENT_ROOT']."database/models/Class.class.php";
+    $studentObj = new Student();
+    $classObj = new ClassTable();
     $helper = new Helper();
 ?>
 
@@ -120,7 +124,9 @@
 
 <!--   Core JS Files   -->
 <?php
+    require_once "../../includes/pages/teacher/modals/select-class.php";
     require_once "../../includes/core-scripts.php";
 ?>
+<script src="../../assets/js/teacher-script.js"></script>
 </body>
 </html>
