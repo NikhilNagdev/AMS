@@ -60,7 +60,7 @@
                     <div class="collapse" id="attendance">
                         <ul class="nav nav-collapse">
                             <li>
-                                <a href="index.php?src=add-attendance">
+                                <a href="" id="add-attendance" onclick="return false;">
                                     <span class="sub-item">Add Attendance</span>
                                 </a>
                             </li>

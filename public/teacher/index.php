@@ -30,13 +30,11 @@
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" href="../../assets/css/azzara.min.css">
-
-    <!-- CSS Just for demo purpose, don't include it in your project -->
-    <link rel="stylesheet" href="../../assets/css/demo.css">
 </head>
 <body>
-<div class="wrapper">
+<div class="wrapper" id="wrapper">
     <div class="main-header" data-background-color="purple">
         <!-- Logo Header -->
         <div class="logo-header">
@@ -125,6 +123,7 @@
 <!--   Core JS Files   -->
 <?php
     require_once "../../includes/pages/teacher/modals/select-class.php";
+    require_once "../../includes/pages/teacher/modals/add-attendance-modal.php";
     require_once "../../includes/core-scripts.php";
 ?>
 <script src="../../assets/js/teacher-script.js"></script>

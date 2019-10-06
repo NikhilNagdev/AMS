@@ -10,7 +10,11 @@
 <script src="../../assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
 
 <!-- Moment JS -->
-<script src="../../assets/js/plugin/moment/moment.min.js"></script>
+<!--<script src="../../assets/js/plugin/moment/moment.min.js"></script>-->
+
+<!-- Datetime Picker -->
+<script src="../../assets/js/bootstrap-datetimepicker/moment.min.js"></script>
+<script src="../../assets/js/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js"></script>
 
 <!-- Chart JS -->
 <script src="../../assets/js/plugin/chart.js/chart.min.js"></script>
