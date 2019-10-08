@@ -1,14 +1,20 @@
 <?php
+    ob_start();
     require_once "../../document_root.php";
     require_once $_SERVER['DOCUMENT_ROOT']."includes/Helper.class.php";
     require_once $_SERVER['DOCUMENT_ROOT']."database/models/Student.class.php";
     require_once $_SERVER['DOCUMENT_ROOT']."database/models/Class.class.php";
     require_once $_SERVER['DOCUMENT_ROOT']."database/models/Subject.class.php";
+    require_once $_SERVER['DOCUMENT_ROOT']."database/models/Batch.class.php";
+    require_once $_SERVER['DOCUMENT_ROOT']."database/models/Attendance.claas.php";
+
     $teacherID = 1;
     $helper = new Helper();
     $studentObj = new Student();
     $classObj = new ClassTable();
     $subjectObj = new Subject();
+    $batchObj = new Batch();
+    $attendanceObj = new Attendance();
 ?>
 
 <!DOCTYPE html>

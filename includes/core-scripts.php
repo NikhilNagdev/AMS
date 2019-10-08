@@ -48,5 +48,7 @@
 <script src="../../assets/js/ready.min.js"></script>
 
 <script>
-    $('#basic-datatables').DataTable();
+     var table = $('#basic-datatables').dataTable({
+
+    });
 </script>

@@ -33,7 +33,7 @@
                             $subjects = $subjectObj->getSubjectIdByTeacher($teacherID);
                             echo "<option value=\"0\" selected disabled>Select here</option>";
                             foreach ($subjects as $subject){
-                                echo "<option value=$subject->subject_id>$subject->subject_name</option>";
+                                echo "<option value=$subject->id>$subject->subject_name</option>";
                             }
                             ?>
                         </select>
