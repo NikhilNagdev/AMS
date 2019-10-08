@@ -53,7 +53,6 @@
                                             </tr>
 <input type="checkbox" hidden name="studentIds[]" value="$student->student_id" checked class="student-id">
 TABLEDATA;
-                                }
                             }
                             ?>
                             </tbody>

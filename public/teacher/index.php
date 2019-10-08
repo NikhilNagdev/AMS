@@ -133,6 +133,7 @@
 <?php
     require_once "../../includes/pages/teacher/modals/select-class.php";
     require_once "../../includes/pages/teacher/modals/add-attendance-modal.php";
+    require_once "../../includes/pages/teacher/modals/view-attendance-modal.php";
     require_once "../../includes/core-scripts.php";
 ?>
 <script src="../../assets/js/teacher-script.js"></script>

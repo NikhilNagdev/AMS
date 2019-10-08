@@ -73,6 +73,41 @@ $(document).ready(function () {
     /*********************************************************************/
 
     /*********************************************************************/
+    //*********************VIEW Attendance MODAL******************************
+    /*********************************************************************/
+
+    var viewAttendanceModal = $('#view-attendance-modal');
+    $('a#view-attendance').on('click', function () {
+        viewAttendanceModal.addClass("bounceIn");
+        viewAttendanceModal.modal({backdrop: true});
+        wrapper.addClass("blur");
+
+    });
+
+    viewAttendanceModal.on('show.bs.modal', function () {
+        var closeModalBtns = viewAttendanceModal.find('button[data-custom-dismiss="modal"]');
+        closeModalBtns.on('click', function () {
+            viewAttendanceModal.on('webkitAnimationEnd oanimationend msAnimationEnd animationend', function (evt) {
+                viewAttendanceModal.modal('hide');
+                wrapper.removeClass("blur");
+            });
+            viewAttendanceModal.removeClass("bounceIn").addClass("bounceOut");
+        })
+    });
+
+    viewAttendanceModal.on('hidden.bs.modal', function (evt) {
+        wrapper.removeClass("blur");
+        var closeModalBtns = viewAttendanceModal.find('button[data-custom-dismiss="modal"]');
+        viewAttendanceModal.removeClass("bounceOut");
+        viewAttendanceModal.off('webkitAnimationEnd oanimationend msAnimationEnd animationend')
+        closeModalBtns.off('click');
+    });
+
+    /*********************************************************************/
+    //*********************VIEW ATTENDANCE MODAL******************************
+    /*********************************************************************/
+
+    /*********************************************************************/
     //*********************DATETIME PICKER******************************
     /*********************************************************************/
 

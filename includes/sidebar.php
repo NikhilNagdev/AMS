@@ -65,7 +65,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="index.php?src=view-attendance">
+                                <a href="" id="view-attendance" onclick="return false;">
                                     <span class="sub-item">View Attendance</span>
                                 </a>
                             </li>
