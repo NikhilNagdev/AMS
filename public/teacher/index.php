@@ -122,6 +122,9 @@
                         case 'view-all-students':
                             require_once "student/view-all-students.php";
                             break;
+                        case 'view-all-reports':
+                            require_once "report/view-all-reports.php";
+                            break;
                         default:
                             require_once "../../includes/pages/teacher/dashboard.php";
                     }
@@ -140,6 +143,7 @@
     require_once "../../includes/pages/teacher/modals/select-class.php";
     require_once "../../includes/pages/teacher/modals/add-attendance-modal.php";
     require_once "../../includes/pages/teacher/modals/view-attendance-modal.php";
+    require_once "../../includes/pages/teacher/modals/view-report-modal.php";
     require_once "../../includes/core-scripts.php";
 ?>
 <script src="../../assets/js/teacher-script.js"></script>

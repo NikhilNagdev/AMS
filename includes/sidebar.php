@@ -81,7 +81,7 @@
                     <div class="collapse" id="reports">
                         <ul class="nav nav-collapse">
                             <li>
-                                <a href="components/avatars.html">
+                                <a href="" id="view-report" onclick="return false;">
                                     <span class="sub-item">View Reports</span>
                                 </a>
                             </li>

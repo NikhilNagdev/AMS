@@ -217,4 +217,41 @@ $(document).ready(function () {
     /*********************************************************************/
     //*********************END OF VIEW ATTENDANCE******************************
     /*********************************************************************/
+
+
+    /*********************************************************************/
+    //*********************VIEW Reports MODAL******************************
+    /*********************************************************************/
+
+    var viewReportModal = $('#view-report-modal');
+    $('a#view-report').on('click', function () {
+        viewReportModal.addClass("bounceIn");
+        viewReportModal.modal({backdrop: true});
+        wrapper.addClass("blur");
+
+    });
+
+    viewReportModal.on('show.bs.modal', function () {
+        var closeModalBtns = viewAttendanceModal.find('button[data-custom-dismiss="modal"]');
+        closeModalBtns.on('click', function () {
+            viewReportModal.on('webkitAnimationEnd oanimationend msAnimationEnd animationend', function (evt) {
+                viewReportModal.modal('hide');
+                wrapper.removeClass("blur");
+            });
+            viewReportModal.removeClass("bounceIn").addClass("bounceOut");
+        })
+    });
+
+    viewReportModal.on('hidden.bs.modal', function (evt) {
+        wrapper.removeClass("blur");
+        var closeModalBtns = viewReportModal.find('button[data-custom-dismiss="modal"]');
+        viewReportModal.removeClass("bounceOut");
+        viewReportModal.off('webkitAnimationEnd oanimationend msAnimationEnd animationend')
+        closeModalBtns.off('click');
+    });
+
+
+    /*********************************************************************/
+    //*********************VIEW Reports MODAL******************************
+    /*********************************************************************/
 });
