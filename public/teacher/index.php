@@ -112,27 +112,30 @@ $attendanceObj = new Attendance();
             </div>
             <!--MAIN PAGE CONTENT-->
             <?php
-            if (isset($_GET['src'])) {
-                $page = $_GET['src'];
-                switch ($page) {
-                    case 'add-attendance':
-                        require_once "attendance/add-attendance.php";
-                        break;
-                    case 'add-student':
-                        require_once "student/add-students.php";
-                        break;
-                    case 'view-attendance':
-                        require_once "attendance/view-all-attendance.php";
-                        break;
-                    case 'view-all-students':
-                        require_once "student/view-all-students.php";
-                        break;
-                    default:
-                        require_once "../../includes/pages/teacher/dashboard.php";
+                if(isset($_GET['src'])){
+                    $page = $_GET['src'];
+                    switch ($page){
+                        case 'add-attendance':
+                            require_once "attendance/add-attendance.php";
+                            break;
+                        case 'add-student':
+                            require_once "student/add-students.php";
+                            break;
+                        case 'view-attendance':
+                            require_once "attendance/view-all-attendance.php";
+                            break;
+                        case 'view-all-students':
+                            require_once "student/view-all-students.php";
+                            break;
+                        case 'view-all-reports':
+                            require_once "report/view-all-reports.php";
+                            break;
+                        default:
+                            require_once "../../includes/pages/teacher/dashboard.php";
+                    }
+                }else{
+                    require_once "../../includes/pages/teacher/dashboard.php";
                 }
-            } else {
-                require_once "../../includes/pages/teacher/dashboard.php";
-            }
             ?>
             <!--END OF MAIN PAGE CONTENT-->
         </div>
@@ -142,6 +145,11 @@ $attendanceObj = new Attendance();
 
 <!--   Core JS Files   -->
 <?php
+    require_once "../../includes/pages/teacher/modals/select-class.php";
+    require_once "../../includes/pages/teacher/modals/add-attendance-modal.php";
+    require_once "../../includes/pages/teacher/modals/view-attendance-modal.php";
+    require_once "../../includes/pages/teacher/modals/view-report-modal.php";
+    require_once "../../includes/core-scripts.php";
 require_once "../../includes/pages/teacher/modals/select-class.php";
 require_once "../../includes/pages/teacher/modals/add-attendance-modal.php";
 require_once "../../includes/pages/teacher/modals/view-attendance-modal.php";
@@ -197,11 +205,5 @@ SCRIPT;
 
 ?>
 <script src="../../assets/js/teacher-script.js"></script>
-<script>
-    function addCharts() {
-
-    }
-
-</script>
 </body>
 </html>
