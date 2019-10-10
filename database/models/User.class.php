@@ -24,5 +24,8 @@ class User{
             ->get();
     }
 
+
+
+
     private $user;
 }
