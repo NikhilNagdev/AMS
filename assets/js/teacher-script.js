@@ -225,6 +225,7 @@ $(document).ready(function () {
 
     var viewReportModal = $('#view-report-modal');
     $('a#view-report').on('click', function () {
+        alert();
         viewReportModal.addClass("bounceIn");
         viewReportModal.modal({backdrop: true});
         wrapper.addClass("blur");
@@ -232,7 +233,7 @@ $(document).ready(function () {
     });
 
     viewReportModal.on('show.bs.modal', function () {
-        var closeModalBtns = viewAttendanceModal.find('button[data-custom-dismiss="modal"]');
+        var closeModalBtns = viewReportModal.find('button[data-custom-dismiss="modal"]');
         closeModalBtns.on('click', function () {
             viewReportModal.on('webkitAnimationEnd oanimationend msAnimationEnd animationend', function (evt) {
                 viewReportModal.modal('hide');
