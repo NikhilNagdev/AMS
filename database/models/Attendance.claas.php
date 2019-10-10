@@ -30,6 +30,23 @@ class Attendance{
             ->fetchAll();
     }
 
+
+    public function getAttendanceByClassAndTimeAndSubject($class, $subject, $start_dt){
+
+        return $this->attendance
+            ->select("*")
+            ->join("class", "class.class_id", "attendance.class_id")
+            ->join("subject", "subject.subject_id", "subject.subject_id")
+            ->join("student", "student.student_id", "attendance.student_id")
+            ->join("user", "user.user_id", "student.user_id")
+            ->where("class.classname", $class)
+            ->andWhere("subject.subject_name", $subject)
+            ->andWhere("dt", $start_dt)
+            ->get()
+            ->fetchAll();
+
+    }
+
     public function insertAttendance($student_id, $teacher_id, $subject_id, $datetime, $status, $batch_id, $class_id){
         $this->attendance->insert(array("student_id"=>$student_id, "teacher_id"=>$teacher_id, "subject_id"=>$subject_id, "dt"=>$datetime, "status"=>$status, "class_id"=>$class_id, "batch_id"=>$batch_id));
     }

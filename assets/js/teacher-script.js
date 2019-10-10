@@ -103,6 +103,23 @@ $(document).ready(function () {
         closeModalBtns.off('click');
     });
 
+    var viewAttendanceTable = $('table#view-attendance').DataTable({
+        columnDefs: [
+            {"orderable": false, "targets": 4}
+        ],
+    });
+
+    $('table#view-attendance').on( 'click', 'input', function () {
+        var index = viewAttendanceTable.row(this).index();
+        var data_row = viewAttendanceTable.row($(this).parents('tr')).data();
+        // alert(data_row[0] + data_row[1] + data_row[2] + data_row[3]);
+
+        $('input[name=class_name]').val(data_row[1]);
+        $('input[name=subject_name]').val(data_row[2]);
+        $('input[name=start_dt]').val(data_row[3]);
+    });
+
+
     /*********************************************************************/
     //*********************VIEW ATTENDANCE MODAL******************************
     /*********************************************************************/
@@ -186,6 +203,18 @@ $(document).ready(function () {
 
     });
     /*********************************************************************/
-    //*********************ADD ATTENDANCE******************************
+    //*********************END OF ADD ATTENDANCE******************************
+    /*********************************************************************/
+
+    /*********************************************************************/
+    //*********************VIEW ATTENDANCE******************************
+    /*********************************************************************/
+
+    $('table#view-student-attendance').DataTable({
+
+    });
+
+    /*********************************************************************/
+    //*********************END OF VIEW ATTENDANCE******************************
     /*********************************************************************/
 });

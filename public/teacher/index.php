@@ -41,6 +41,12 @@
     <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../assets/css/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" href="../../assets/css/azzara.min.css">
+
+    <style>
+        tr.highlight {
+            background-color: darkgrey !important;
+        }
+    </style>
 </head>
 <body>
 <div class="wrapper" id="wrapper">
