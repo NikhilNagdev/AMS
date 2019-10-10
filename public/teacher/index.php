@@ -143,5 +143,67 @@
     require_once "../../includes/core-scripts.php";
 ?>
 <script src="../../assets/js/teacher-script.js"></script>
+<script>
+    var doughnutChart = document.getElementById('doughnutChart').getContext('2d');
+    var doughnutChart2 = document.getElementById('doughnutChart2').getContext('2d');
+    var myDoughnutChart = new Chart(doughnutChart, {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+                data: [10, 68],
+                backgroundColor: ['#f3545d','#1d7af3']
+            }],
+
+            labels: [
+                'Absent',
+                'Present'
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            legend : {
+                position: 'bottom'
+            },
+            layout: {
+                padding: {
+                    left: 20,
+                    right: 20,
+                    top: 20,
+                    bottom: 20
+                }
+            }
+        }
+    });
+    var myDoughnutChart2 = new Chart(doughnutChart2, {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+                data: [15, 63],
+                backgroundColor: ['#f3545d','#1d7af3']
+            }],
+
+            labels: [
+                'Absent',
+                'Present'
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            legend : {
+                position: 'bottom'
+            },
+            layout: {
+                padding: {
+                    left: 20,
+                    right: 20,
+                    top: 20,
+                    bottom: 20
+                }
+            }
+        }
+    });
+</script>
 </body>
 </html>
