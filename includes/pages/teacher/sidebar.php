@@ -10,9 +10,15 @@
                 <div class="info">
                     <a aria-expanded="true" onclick="return false;">
                         <span>
-                            Nikhil Nagdev
-                            <span class="user-level">Teacher</span>
+                            <?php
+                            session_start();
+                            echo $_SESSION['name'];
+                            echo<<<END
+ <span class=user-level>{$_SESSION['role']}</span>
+END;
+                            ?>
                         </span>
+
                     </a>
                 </div>
             </div>

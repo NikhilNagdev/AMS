@@ -37,12 +37,13 @@ class Process
                 if (!isset($_SESSION['user_id'])) {
                     session_start();
                 }
-                $_SESSION['user_i+-d'] = $user_id;
-                $_SESSION['role'] = $role;
+                $_SESSION['user_id'] = $user_id;
                 $_SESSION['name'] = $name;
                 if ($role == 1) {
+                    $_SESSION['role'] = "Administrator";
                     header("Location: public/admin/index.php");
                 } elseif ($role == 2) {
+                    $_SESSION['role'] = "Teacher";
                     header("Location: public/teacher/index.php");
                 }
             } else {

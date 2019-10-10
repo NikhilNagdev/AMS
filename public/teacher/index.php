@@ -52,6 +52,7 @@ $attendanceObj = new Attendance();
     </style>
 </head>
 <body>
+
 <div class="wrapper" id="wrapper">
     <div class="main-header" data-background-color="purple">
         <!-- Logo Header -->
