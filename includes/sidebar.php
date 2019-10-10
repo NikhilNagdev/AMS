@@ -11,7 +11,7 @@
                     <a aria-expanded="true" onclick="return false;">
                         <span>
                             Nikhil Nagdev
-                            <span class="user-level">Administrator</span>
+                            <span class="user-level">Teacher</span>
                         </span>
                     </a>
                 </div>
@@ -21,7 +21,7 @@
                     <a href="index.php">
                         <i class="fas fa-home"></i>
                         <p>Dashboard</p>
-                        <span class="badge badge-count">5</span>
+<!--                        <span class="badge badge-count">5</span>-->
                     </a>
                 </li>
                 <li class="nav-section">
