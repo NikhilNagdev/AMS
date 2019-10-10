@@ -66,18 +66,18 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <div class="card-title">Attendance of last 2 days</div>
+                    <span class="card-title">Attendance of last 2 days</span>
                 </div>
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="chart-container">
-                                <canvas id="doughnutChart" style="width: 50%; height: 50%"></canvas>
+                                <canvas id="doughnutChart1" style="width: 50%; height: 50%"></canvas>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="chart-container">
-                                <canvas id="doughnutChart2" style="width: 50%; height: 50%"></canvas>
+                                <canvas id="doughnutChart3" style="width: 50%; height: 50%"></canvas>
                             </div>
                         </div>
                     </div>
@@ -85,6 +85,8 @@
                 </div>
             </div>
         </div>
+
+    </div>
 
     </div>
 

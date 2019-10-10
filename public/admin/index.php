@@ -239,7 +239,7 @@ require_once "../../document_root.php";
 
     <!-- Sidebar -->
     <?php
-    require_once $_SERVER['DOCUMENT_ROOT']."includes/sidebar.php";
+    require_once $_SERVER['DOCUMENT_ROOT'] . "includes/sidebar.php";
     ?>
     <!-- End Sidebar -->
 

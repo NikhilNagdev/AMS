@@ -47,9 +47,22 @@ class Attendance{
 
     }
 
+    public function getLatestAttendance($teacher_id, $limit){
+        //SELECT count(*) FROM attendance WHERE teacher_id = 1 GROUP BY STATUS, dt ORDER BY dt DESC limit 4
+        return $this->attendance
+            ->select("count(*) as status")
+            ->where("teacher_id", $teacher_id)
+            ->groupBy("STATUS, dt")
+            ->orderBy("dt DESC")
+            ->limit($limit)
+            ->get()
+            ->fetchAll();
+    }
+
     public function insertAttendance($student_id, $teacher_id, $subject_id, $datetime, $status, $batch_id, $class_id){
         $this->attendance->insert(array("student_id"=>$student_id, "teacher_id"=>$teacher_id, "subject_id"=>$subject_id, "dt"=>$datetime, "status"=>$status, "class_id"=>$class_id, "batch_id"=>$batch_id));
     }
+
 
     private $attendance;
 
