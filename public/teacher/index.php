@@ -205,5 +205,13 @@ SCRIPT;
 
 ?>
 <script src="../../assets/js/teacher-script.js"></script>
+<script>
+    $('table#view-overall-attendance').DataTable({
+        dom: 'Bfrtip',
+        buttons: [
+            'copy', 'csv', 'excel', 'pdf', 'print'
+        ]
+    });
+</script>
 </body>
 </html>

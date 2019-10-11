@@ -12,7 +12,7 @@
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
-                        <table id="basic-datatables" class="display table table-striped table-hover" cellspacing="0" width="100%">
+                        <table id="view-overall-attendance" class="display table table-striped table-hover" cellspacing="0" width="100%">
                             <thead>
                             <tr>
                                 <th>Roll no</th>

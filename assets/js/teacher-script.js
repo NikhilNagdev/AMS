@@ -251,6 +251,12 @@ $(document).ready(function () {
         closeModalBtns.off('click');
     });
 
+    // $('table#view-overall-attendance').dataTable({
+    //     dom: 'Bfrtip',
+    //     buttons: [
+    //         'copy', 'csv', 'excel', 'pdf', 'print'
+    //     ]
+    // });
 
     /*********************************************************************/
     //*********************VIEW Reports MODAL******************************
