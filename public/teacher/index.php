@@ -173,12 +173,12 @@ foreach ($attendanceCount as $c){
                 data: {
                     datasets: [{
                         data: [$status[$i], $status[$tempi]],
-                        backgroundColor: ['#f3545d','#1d7af3']
+                        backgroundColor: ['#1d7af3', '#f3545d']
                     }],
     
                     labels: [
-                        'Absent',
-                        'Present'
+                        'Present',
+                        'Absent'
                     ]
                 },
                 options: {
