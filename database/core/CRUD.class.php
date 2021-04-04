@@ -168,6 +168,7 @@ class CRUD
             $this->buildQuery();
 //            echo($this->count++."".$this->query);
             $pdoStatement = $this->getPDOdStatement($this->query);
+//            var_dump($this->query);
 //            echo "<br>".($this->query);
 //            echo "<br>".print_r($this->values);
             for($i=0; $i<count($this->values); $i++){

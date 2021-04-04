@@ -93,6 +93,22 @@ END;
                         </ul>
                     </div>
                 </li>
+                <li class="nav-item">
+                    <a data-toggle="collapse" href="#backup">
+                        <i class="fas fa-layer-group"></i>
+                        <p>Reports</p>
+                        <span class="caret"></span>
+                    </a>
+                    <div class="collapse" id="backup">
+                        <ul class="nav nav-collapse">
+                            <li>
+                                <a href="/ams/public/admin/backup/index.php">
+                                    <span class="sub-item">Do backup</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>

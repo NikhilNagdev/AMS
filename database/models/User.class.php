@@ -19,7 +19,6 @@ class User{
     public function getUser($email){
         return $this->user
             ->join("user_role", "user.user_id", "user_role.user_id")
-            ->join("role", "role.role_id", "user_role.role")
             ->where("email", $email)
             ->select("*")
             ->get();
